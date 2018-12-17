@@ -29,7 +29,7 @@ import { AppRegistry, StyleSheet, Image, View, Text } from 'react-native';
 
 export default class FixedDimensionsBasics extends Component {
     render(){
-      return(<View style={{flex:1,height:50}}>
+      return(<View style={{flex:1, flexDirection: 'row'}}>
                 <View style={{flex:1, backgroundColor: 'powderblue'}}/>
                 <View style={{flex:2, backgroundColor: 'skyblue'}}/>
                 <View style={{flex:3, backgroundColor: 'steelblue'}}/>
