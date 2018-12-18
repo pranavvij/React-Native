@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Image, View, Text, TextInput, Button,Alert } from 'react-native';
+import { AppRegistry, StyleSheet, Image, View, Text, TextInput, Button,Alert,ScrollView } from 'react-native';
 
 // const styles = StyleSheet.create({
 //     bigblue: {
@@ -66,57 +66,97 @@ import { AppRegistry, StyleSheet, Image, View, Text, TextInput, Button,Alert } f
 //   }
 // }
 
-export default class ButtonBasics extends Component {
-  _onPressButton(){
-    Alert.alert('You tapped the button!');
-  }
+// export default class ButtonBasics extends Component {
+//   _onPressButton(){
+//     Alert.alert('You tapped the button!');
+//   }
+//
+//   render(){
+//     return (
+//       <View style={styles.container}>
+//       <View style={styles.buttonContainer}>
+//         <Button
+//           onPress={this._onPressButton}
+//           title="Press Me"
+//         />
+//       </View>
+//       <View style={styles.buttonContainer}>
+//         <Button
+//           onPress={this._onPressButton}
+//           title="Press Me"
+//           color="#841584"
+//         />
+//       </View>
+//       <View style={styles.alternativeLayoutButtonContainer}>
+//         <Button
+//           onPress={this._onPressButton}
+//           title="This looks great!"
+//         />
+//         <Button
+//           onPress={this._onPressButton}
+//           title="OK!"
+//           color="#841584"
+//         />
+//       </View>
+//     </View>
+//       );
+//   }
+// }
+//
+// const styles = StyleSheet.create({
+//   container: {
+//    flex: 1,
+//    backgroundColor: '#000000',
+//    justifyContent: 'center',
+//   },
+//   buttonContainer: {
+//     margin: 20
+//   },
+//   alternativeLayoutButtonContainer: {
+//     margin: 20,
+//     flexDirection: 'row',
+//     justifyContent: 'space-between'
+//   }
+// });
 
-  render(){
-    return (
-      <View style={styles.container}>
-      <View style={styles.buttonContainer}>
-        <Button
-          onPress={this._onPressButton}
-          title="Press Me"
-        />
-      </View>
-      <View style={styles.buttonContainer}>
-        <Button
-          onPress={this._onPressButton}
-          title="Press Me"
-          color="#841584"
-        />
-      </View>
-      <View style={styles.alternativeLayoutButtonContainer}>
-        <Button
-          onPress={this._onPressButton}
-          title="This looks great!"
-        />
-        <Button
-          onPress={this._onPressButton}
-          title="OK!"
-          color="#841584"
-        />
-      </View>
-    </View>
-      );
+
+export default class IScrolledDownAndWhatHappenedNextShockedMe extends Component {
+  render() {
+      return (
+        <ScrollView>
+          <Text style={{fontSize:96}}>Scroll me plz</Text>
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Text style={{fontSize:96}}>If you like</Text>
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Text style={{fontSize:96}}>Scrolling down</Text>
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Text style={{fontSize:96}}>What's the best</Text>
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Text style={{fontSize:96}}>Framework around?</Text>
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Text style={{fontSize:80}}>React Native</Text>
+        </ScrollView>
+    );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-   flex: 1,
-   backgroundColor: '#000000',
-   justifyContent: 'center',
-  },
-  buttonContainer: {
-    margin: 20
-  },
-  alternativeLayoutButtonContainer: {
-    margin: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  }
-});
-
-AppRegistry.registerComponent('ReactTutorial', () => ButtonPressComponent);
+AppRegistry.registerComponent('ReactTutorial', () => IScrolledDownAndWhatHappenedNextShockedMe);
